@@ -335,7 +335,7 @@ nav button{
     /* Navigation Responsive */
     nav{
         justify-content: space-between;
-        border-bottom: 0.5px solid var(--Orange, #FEA301);
+        border: 0.5px solid var(--Orange, #FEA301);
         padding: 3px;
     }
     .nav-title>p{
