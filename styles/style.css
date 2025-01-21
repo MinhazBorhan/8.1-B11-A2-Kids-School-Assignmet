@@ -250,7 +250,7 @@ nav button{
     color: white;
 }
 .foot-container-2{
-    margin-left: 150px;
+    margin-left: 120px;
 }
 .foot-container-1 div{
     display: flex;
@@ -272,7 +272,7 @@ nav button{
 }
 .foot-container-2 ul li{
     list-style: none;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 .foot-container-2 ul li a{
     text-decoration: none;
@@ -415,5 +415,16 @@ nav button{
     .story-container>button{
         padding: 10px 50px;
         margin: 20px 0 40px 0;
+    }
+
+
+    /* Footer Responsive Style */
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: flex-start;
+        padding: 20px;
+    }
+    .foot-container-1, .foot-container-2, .foot-container-3{
+        margin: 0 0 25px 0;
     }
 }
