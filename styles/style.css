@@ -1,25 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
 
+html {
+    font-size: 16px; /* Default browser font size is usually 16px */
+  }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", serif;
-    color: var(--Black, #111);
 }
-
+body{
+    border: 1px solid black;
+}
 /* Navigation Style */
+
 nav, .nav-about, .nav-title, .nav-li>ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 10px 0;
 }
 .nav-about{
     width: 100%;
 }
 .nav-title>p{
-    font-size: 1.8vw;
+    font-size: 2rem;
     font-weight: 700;
 }
 .nav-li{
@@ -33,6 +38,7 @@ nav, .nav-about, .nav-title, .nav-li>ul{
 }
 .nav-li>ul>li>a{
     text-decoration: none;
+    font-size: 1.25rem;
 }
 nav button{
     border-radius: 12px;
@@ -40,19 +46,266 @@ nav button{
     padding: 17px 60px;
     border: none;
     color: white;
-    font-size: 1.2vw;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 .hamburger{
     display: none;
 }
 
 
+/* Banner Style */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    margin: 10px auto;
+    gap: 100px;
+}
+.banner-info, .banner-img{
+    width: 50%;
+}
+.banner-info h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.banner-info p{
+    margin: 24px 0;
+}
+.banner-info button, .story-container>button{
+    border-radius: 12px;
+    background-color: black;
+    padding: 17px 50px;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.banner-img img{
+    width: 100%;
+}
+
+
+/* Carriculam Section Style */
+.carirriculam-container{
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 60px;
+    margin: 10px auto;
+}
+.carirriculam-container h3, .story-container h3{
+    font-size: 2.9rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px auto;
+
+}
+.carirriculam-contain{
+    display: flex;
+    gap: 32px;
+    text-align: center;
+}
+.carirriculam-card{
+    flex: 1;
+    padding: 60px 30px;
+}
+.carirriculam-card h4, .story-container h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.carirriculam-card p, .story-container p{
+    color: #808080;
+    font-weight: 500;
+    margin: 20px 0 30px 0;
+}
+.carirriculam-card button{
+    font-weight: 700;
+    border: none;
+    background: none;
+}
+.card-1{
+    border-radius: 18.864px;
+    border: 0.943px solid #DEF5FF;
+    background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+.card-2{
+    border-radius: 18.864px;
+    border: 0.943px solid #FFF4DC;
+    background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+.card-3{
+    border-radius: 18.864px;
+    border: 0.943px solid #F2E8FF;
+    background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+.carirriculam-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.carirriculam-btn button{
+    border-radius: 50%;
+    padding: 15px 20px;
+    /* border-radius: 30px; */
+    background: var(--Orange, #FEA301);
+    color: white;
+    border: none;
+}
+.carirriculam-btn button i{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+/* Story Section Style */
+.story-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%), url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 60px;
+    /* margin: 0px auto; */
+}
+.story-all-about{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+.contain-1{
+    width: 50%;
+}
+.story-sub-about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 50%;
+}
+.story-contain{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 16px;
+    background-color: white;
+}
+.story-title{
+    position: relative;
+}
+.story-title img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+.contain-1 .story-info h4{
+    margin-top: 60px;
+}
+.story-info{
+    padding: 0 40px;
+}
+.story-contain button{
+    position: absolute;
+    left: 30px;
+    bottom: -15px;
+    padding: 15px 19px 15px 19px;
+    border-radius: 47.934px;
+    background: #3CD8E8;
+    border: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: white;
+}
+.story-sub-about .story-contain .story-title button{
+    padding: 7px 10px;
+    bottom: -10px;
+}
+.story-sub-about .story-contain .story-info P{
+    font-weight: 700;
+    color: black;
+    margin-top: 40px;
+}
+.story-container>button{
+    margin: 60px auto 30px;
+}
+
+/* Footer Section Style */
+.footer-container{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* align-items: center;
+    justify-content: center; */
+    background: #01ACFD;
+    padding: 100px 0px 100px 150px;
+    color: white;
+}
+.foot-container-2{
+    margin-left: 150px;
+}
+.foot-container-1 div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.foot-container-1 h4{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.foot-container-1 img{
+    background-color: white;
+    width: 20%;
+}
+.foot-container-1 p{
+    font-size: 1.25rem;
+    margin-top: 30px;
+}
+.foot-container-2 ul li{
+    list-style: none;
+    margin-bottom: 22px;
+}
+.foot-container-2 ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+}
+.foot-container-2 h5{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+.foot-container-3{
+    margin-left: 50px;
+}
+.foot-container-3 h4{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+.foot-container-3 div{
+    display: flex;
+    gap: 10px;
+}
 
 
 @media only screen and (max-width: 576px) {
+    body{
+        /* width: 95%; */
+        padding: 0 5px;
+    }
+    /* Navigation Responsive */
     nav{
         justify-content: space-between;
+        border-bottom: 0.5px solid var(--Orange, #FEA301);
+        padding: 3px;
     }
     .nav-title>p{
         display: none;
@@ -68,7 +321,7 @@ nav button{
         display: none;
     }
     .hamburger label i{
-       font-size: 8vw;
+       font-size: 2.5rem;
     }
     .hamburger label:hover div{
         display: block;
@@ -86,8 +339,81 @@ nav button{
         padding: 10px 30px;
         border: none;
         color: white;
-        font-size: 3vw;
+        margin-top: 5px;
+        font-size: 1rem;
         font-weight: 600;
     }
+    /* Banner Responsive */
+    .banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+    .banner-info{
+        text-align: center;
+        width: 100%;
+    }
+    .banner-info h1{
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    .banner-info p{
+        margin: 20px 0;
+    }
+    .banner-info button{
+        /* font-size: 16px;  */
+    }
+    .banner-img{
+        width: 100%;
+        padding: 10px;
+    }
+    
 
+    /* Carriculam Section Responsive */
+    .carirriculam-container{
+        padding: 0;
+        width: 100%;
+    }
+    .carirriculam-container h3{
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin: 60px auto 20px auto;
+    }
+    .carirriculam-contain{
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    .carirriculam-btn{
+        display: none;
+    }
+
+    /* Story Section Responsive */
+    .story-container{
+        padding: 10px;
+    }
+    .contain-1{
+        display: none;
+    }
+    .story-sub-about{
+        width: 100%;
+        gap: 10px;
+    }
+    .story-info{
+        padding: 10px;
+    }
+    .story-sub-about .story-contain .story-info P{
+        font-size: 0.7rem;
+    }
+    .story-sub-about .story-contain .story-title button{
+        padding: 7px 7px;
+        left: 15px;
+        bottom: -5px;
+        font-size: 0.7rem;
+    }
+    .story-container>button{
+        padding: 10px 50px;
+        margin: 20px 0 40px 0;
+    }
 }
